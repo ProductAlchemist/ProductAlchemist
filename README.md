@@ -6,22 +6,43 @@ Product Manager @ **Porter** specializing in creating platforms that drive busin
 
 ---
 
+## 📫 Connect With Me
+
+💼 **LinkedIn**: [kshitijkulkarni-productmanager](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
+📧 **Email**: kshitijkulkarni95@gmail.com
+📂 **Case Studies**: [porter-case-studies](https://github.com/ProductAlchemist/porter-case-studies)
+
+---
+
 ## 💡 What I've Built at Porter
 
-**Lending Platform (0→1)**
+**[Lending Platform (0→1)](https://github.com/ProductAlchemist/porter-case-studies/blob/main/lending-platform.md)**
 Built and scaled complete lending infrastructure from scratch
 → **10x growth** in platform adoption
 → Enabled credit access for thousands of logistics partners
 
-**Taxation Infrastructure**
+**[Taxation Infrastructure](https://github.com/ProductAlchemist/porter-case-studies/blob/main/taxation-system.md)**
 Designed tax compliance system handling complex regulatory requirements
 → Delivered **₹2.4 Cr in cost savings**
 → Automated compliance for enterprise customers
 
-**Fraud Prevention System**
-Developed behavioral design-based fraud detection and prevention
-→ Protected platform integrity across transactions
-→ Reduced fraud incidents while maintaining user experience
+**[Partner Acquisition & Growth](https://github.com/ProductAlchemist/porter-case-studies/blob/main/partner-acquisition.md)**
+Launched multi-channel acquisition strategy with digital marketing and OEM partnerships
+→ **20% of supply** via digital channels, **5%** via OEM partnerships
+→ Improved conversion rates **40% → 52%** through optimization
+
+**[Discovery & Opportunity Sizing](https://github.com/ProductAlchemist/porter-case-studies/blob/main/acquisition-opportunity-sizing.md)**
+Strategic discovery work that informed product priorities
+→ Identified **₹8.5 Cr TAM** opportunity in B2B acquisition
+→ Data-driven market analysis and partner segmentation
+
+---
+
+## 📚 Featured Work
+
+Explore detailed case studies showcasing end-to-end product development—from discovery and strategy to execution and impact measurement.
+
+👉 **[View All Case Studies](https://github.com/ProductAlchemist/porter-case-studies)** — Deep dives into platform architecture, decision-making, and measurable business outcomes
 
 ---
 
