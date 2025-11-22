@@ -9,40 +9,30 @@ Product Manager @ **Porter** specializing in creating platforms that drive busin
 ## 📫 Connect With Me
 
 💼 **LinkedIn**: [kshitijkulkarni-productmanager](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
+
 📧 **Email**: kshitijkulkarni95@gmail.com
+
 📂 **Case Studies**: [porter-case-studies](https://github.com/ProductAlchemist/porter-case-studies)
 
 ---
 
-## 💡 What I've Built at Porter
+## 📚 What I've Built at Porter
+
+Detailed case studies of platform products I've shipped:
 
 **[Lending Platform (0→1)](https://github.com/ProductAlchemist/porter-case-studies/blob/main/lending-platform.md)**
-Built and scaled complete lending infrastructure from scratch
-→ **10x growth** in platform adoption
-→ Enabled credit access for thousands of logistics partners
+Built and scaled complete lending infrastructure from scratch → 10x growth in platform adoption → Enabled credit access for thousands of logistics partners
 
 **[Taxation Infrastructure](https://github.com/ProductAlchemist/porter-case-studies/blob/main/taxation-system.md)**
-Designed tax compliance system handling complex regulatory requirements
-→ Delivered **₹2.4 Cr in cost savings**
-→ Automated compliance for enterprise customers
+Designed tax compliance system handling complex regulatory requirements → Delivered ₹2.4 Cr in cost savings → Automated compliance for enterprise customers
 
 **[Partner Acquisition & Growth](https://github.com/ProductAlchemist/porter-case-studies/blob/main/partner-acquisition.md)**
-Launched multi-channel acquisition strategy with digital marketing and OEM partnerships
-→ **20% of supply** via digital channels, **5%** via OEM partnerships
-→ Improved conversion rates **40% → 52%** through optimization
+Launched multi-channel acquisition strategy → 20% digital supply, 5% via OEM partnerships → Improved conversion 40%→52%
 
 **[Discovery & Opportunity Sizing](https://github.com/ProductAlchemist/porter-case-studies/blob/main/acquisition-opportunity-sizing.md)**
-Strategic discovery work that informed product priorities
-→ Identified **₹8.5 Cr TAM** opportunity in B2B acquisition
-→ Data-driven market analysis and partner segmentation
+Strategic discovery work that informed product priorities → Identified ₹8.5 Cr TAM opportunity through data-driven analysis
 
----
-
-## 📚 Featured Work
-
-Explore detailed case studies showcasing end-to-end product development—from discovery and strategy to execution and impact measurement.
-
-👉 **[View All Case Studies](https://github.com/ProductAlchemist/porter-case-studies)** — Deep dives into platform architecture, decision-making, and measurable business outcomes
+[→ View all detailed case studies with full metrics and learnings](https://github.com/ProductAlchemist/porter-case-studies)
 
 ---
 
@@ -65,25 +55,34 @@ Designing scalable infrastructure that enables business growth and operational e
 ## 🎯 My Approach
 
 ✅ **Data-Driven**: Every decision backed by metrics and user behavior analysis
+
 ✅ **Impact-Focused**: Obsessed with measurable business outcomes and ROI
+
 ✅ **Technical**: Deep understanding of platform architecture and scalability
+
 ✅ **Cross-Functional**: Leading engineering, design, and business teams to ship fast
 
 ---
 
-## 🎓 Background
+## 🎓 Education & Recognition
 
-**MBA** – IMT Ghaziabad
-**Awards & Recognition** – Recognized for platform innovation and business impact
+**MBA (Finance, IT)** – IMT Ghaziabad, 2022
+
+**Porter Champion (Q3 FY24)** – User-first improvements & revenue tools
+
+**Shout Out Badge (2024)** – Led unsecured loans through regulatory challenges
+
+**Core Team, TEDxIMT Ghaziabad (2022)** – Led 40-person team
+
+**SPOT Award, Cognizant (2018)** – Star Performer
 
 ---
 
-## 💼 Currently
+## 🤝 Let's Collaborate
 
-🔍 **Open to**: Product Leadership roles, Platform PM positions, Fintech opportunities
-🤝 **Looking to collaborate on**: 0→1 product ideas, behavioral design, fintech innovation
+Interested in discussing: 0→1 product ideas, behavioral design patterns, fintech platform architecture, AI/LLM applications in product
 
-📫 Interested in discussing product strategy, platform development, or fintech? Let's talk.
+📫 **Open to**: Product Leadership roles, Platform PM positions, Fintech opportunities
 
 ---
 
