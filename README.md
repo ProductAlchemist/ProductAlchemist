@@ -78,7 +78,7 @@ Designing scalable infrastructure that enables business growth and operational e
 
 ---
 
-## 💬 Let's Connect
+## 💼 Currently
 
 🔍 **Open to**: Product Leadership roles, Platform PM positions, Fintech opportunities
 🤝 **Looking to collaborate on**: 0→1 product ideas, behavioral design, fintech innovation
