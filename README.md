@@ -82,8 +82,6 @@ Designing scalable infrastructure that enables business growth and operational e
 
 Interested in discussing: 0→1 product ideas, behavioral design patterns, fintech platform architecture, AI/LLM applications in product
 
-📫 **Open to**: Product Leadership roles, Platform PM positions, Fintech opportunities
-
 ---
 
 *Building products that create real impact, one platform at a time.*
