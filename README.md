@@ -6,6 +6,12 @@ Product Manager @ **Porter** specializing in creating platforms that drive busin
 
 ---
 
+## 🌱 Currently Learning
+
+Building expertise in AI/LLM product development through hands-on implementation → [View Learning Journey](https://github.com/ProductAlchemist/AI-PM-Learning-Journey)
+
+---
+
 ## 📫 Connect With Me
 
 💼 **LinkedIn**: [kshitijkulkarni-productmanager](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
@@ -78,10 +84,20 @@ Designing scalable infrastructure that enables business growth and operational e
 
 ---
 
+## 📊 GitHub Activity
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProductAlchemist&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ProductAlchemist&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
+
+---
+
 ## 🤝 Let's Collaborate
 
 Interested in discussing: 0→1 product ideas, behavioral design patterns, fintech platform architecture, AI/LLM applications in product
 
 ---
 
-*Building products that create real impact, one platform at a time.*
+![Profile Views](https://komarev.com/ghpvc/?username=ProductAlchemist&color=58A6FF&style=flat-square&label=Profile+Views)
+
+*Building in public, learning in the open.*
