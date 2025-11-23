@@ -1,0 +1,712 @@
+Onboarding Opportunity sizing doc
+Onboarding Opportunity sizing doc
+Objective
+The objective of the document is to identify and highlight the optimisation opportunity in the partner onboarding experience
+Onboarding Metrics
+Product metrics
+Onboarding conversion
+- (Owner details page load to Driver profile created)
+Onboarding started with All doc uploaded
+% Documents rejected DIV
+% Drop off at different stages
+All doc uploads to the driver created
+% Documents with the error/mismatch by idfy
+Id_not found
+State mismatch
+Name mismatch
+Age band mismatch
+% Documents rejected by SCMS/ Total acted upon
+Cost per onboarded partner
+- (Driver profile created)
+Onboarding per  FOS agent
+Onboarding per SCMS agent
+No of support queries per onboarding -
+No of queries/ No of onboarding
+No of walk-ins in city office/ No of onboarding
+No of support queries/ No of onboarding
+TAT (Median, P75, P90) For partner onboarding -
+Document submitted for verification to successful driver creation
+% Documents rejected
+Average handling time for the SCMS agents
+Time to assign the ticket
+% Fraud profiles created
+% Compliant partners
+% Insurance compliant partners
+% PUC compliant partners
+% Fitness compliant partners
+Engineering metrics (WIP)
+Extensibility
+Service Coupling:
+Track dependencies between services to ensure low coupling
+Well defined System boundaries
+Service to service communication via APIs to obtain information. No direct reads from tables across boundaries.
+Time to Implement New Features:
+Measure the time it takes to add new features , needs to be an improvement over the current system.
+Performance & Scalability
+Response Time
+Track API response times
+API response times to be under (??)
+Throughput
+Benchmark number of requests that can be served in 1 second.
+Resource
+Utilization
+Measure CPU, memory & Storage Utilisation.
+Load Testing & Benchmarking
+Benchmark Response times , Throughput, Latency, Error rates
+Number of concurrent requests that can be handled (Multiple users)
+Operation Metrics
+Build
+Lower build times on local & environments
+Confidence in build pipelines - Comprehensive test suites , Vulnerability Scanning , Code quality (Sonarqube , ??)
+Deploy
+Time taken to deploy services
+Rollback frequency
+Health Checks
+Health check for services , databases indicating liveness
+Alerting on discrepancies
+Security & Compliance
+Security - SAST , Code Vulnerability
+Scans in the CI/CD pipelines to detect vulnerabilities (SAST tools ?, Sonarqube ?? )
+Compliance (??)
+Monitoring
+Logging coverage
+Measure amount of code covered by logging (SonarQube ?)
+Time to Detect issues
+Time taken to do an RCA on the issue raised in production
+Alerting -
+To track Alert Frequency , Low false Positives.
+Track alert frequency (PagerDuty automation ?)
+Low false positives
+Version Control Etiquette
+Trunk Based Development (Depends on confidence in Test suites)
+Modular & Concise PR’s
+In progress code under Feature toggles (?)
+Note -
+Apart from these metrics ensuring the we are meeting the compliance guidelines as per the law of the land and have observability built-in is mandatory.
+Key challenges in the current Partner onboarding
+1. Inadequate Support for Large Fleet Management
+:
+Current State
+: 80% of EV supply and 40-50% of E-Loader supply is through 3PLs, which will likely increase.3 PL supply has grown by ~3.5 X in 2023-2024 and the trend is likely to continue with Projected MOM growth of 12-15%.In next 2-3 years we are expecting 25-30% our supply will come through 3PL vendors. Currently, In EV categories if we are onboarding 100 vehicles in a month, we receive almost 200-300 requests (2X to 3X of onboarding) to change drivers on a vehicle. Our current systems are optimised for Driver-Owner personas, leading to inefficiencies in managing large fleets where drivers frequently change vehicles. This results in poor experience, revenue loss, low retention, and increased fraud risk.
+Key Issues
+:
+Driver Change Process
+: Managing frequent driver changes is cumbersome, with high TAT (1-2 days) and manual workarounds. This causes significant earning loss (e.g., For LCV in July we received 1249 requests for driver change with  1 day TAT and assuming an average earning of Rs 1000 it would have led to ₹12.49 lakhs loss for LCV vendors).
+Incomplete driver documentation leads to difficulties in tracking fraudulent activities, as a workaround teams change only the phone numbers of the driver rather than changing all details of the driver or re-onboarding it, which also leads to customers seeing wrong driver information on app
+Penalties Misaligned
+: SLA penalties are tied to vehicles instead of individual drivers, leading to unfair suspensions and keeping the vehicle operative even if the driver is changed during suspension
+2. Ability to Launch Partner onboarding in  New Countries
+:
+Current State
+: Currently in the international markets we onboard partners via Backend office teams and it doesn’t have a provision in the partner app to onboard via app directly, which creates a hindrance in growing supply organically or doing any marketing activities and increases the cost of onboarding. While when the current scale is low teams are able to manage it, however as we grow, lack of this capability can hinder the supply growth and increase the cost of acquisition significantly, along with that it also hampers the brand perception negatively. Currently we onboard Approx 800-900 partners in a month in Bangladesh, this number will go upto 1500 per month by March.In UAE we onboard 250-300 in a month and are yet to start in turkey
+Lack of in-app onboarding for international markets forces reliance on FOS channels, increasing acquisition costs and limiting scalability. Expanding app-based onboarding is crucial for growth.
+Impact
+: Delayed market entry and inefficient scaling of partner acquisition.
+3. System Loopholes Enabling Fraud
+:
+Current State
+: The system allows multiple users to register with the same documents creating opportunities for fraud. Along with that there is opportunity to improve the visibility of OCR and document verification API response related information for the SCMS team so that the fraud can be curbed
+Recent Incident
+:
+In ~14000 Orders team flagged the Geo spoofing issue in H1, in majority of these cases partners created multiple driver profiles.
+Doc link
+A fraud case resulted in over ₹1 crore loss due to 200+ fake partner profiles.
+Partners upload the edited/ forged documents with edited details like Number, Photo, Name etc
+4. Compliance challenges:
+Currently, we store the Aadhar number and images in our database which is not a complaint approach as per the govt, ideally we should store it in the Aadhar vault
+Also, these documents are easily accessible
+5. High Drop-off Rates in the Onboarding Journey
+:
+Context:
+About 77% of leads drop off between the start of onboarding (owner details page load) and the training start. Specifically, ~50% drop off before submitting owner details, and ~20% drop off at the vehicle details stage.
+Dashboard link
+.
+Owner Details Page
+: Approximately 30% of users who drop off are not potential partners (20% are customers, 9% are existing partners). Another 35% drop off due to unavailable documents, while 19% leave the process because they are busy at that moment.
+Research doc link
+.
+Vehicle Details Page
+: Analysis shows a ~20% drop-off rate on the vehicle details page, with 26% of these users leaving due to RC-related issues.
+Document link
+for more details and in dept analysis
+Document Management
+: Analysis suggests In 63% of rejected cases, the problem was image quality (15% photocopies, 21% blurred images, 8% cropped images). Additionally, 17% of users uploaded someone else’s documents, and 10% submitted the same side of a document twice. These insights will inform improvements to the document upload experience.
+Doc with detailed insights
+6. High TAT for Partner Onboarding
+:
+Current State
+: While TAT metrics are not currently measurable accurately. Currently, 30-40% of partner supply comes through organic channels, with TAT for task assignment to agents at 12-16 hours(Next day), as the assignment is manual
+Performance
+: P75 TAT for onboarding is 2 days for 3W, 9 days for 7Ft, and 6 days for 8ft categories.
+Document link
+7. Tech challenges:
+High Lead Time for Changes
+:
+Underlying Issues
+:
+Tightly Coupled Systems
+: Our architecture is rigid, with highly intertwined systems that slow down any modifications.
+Shared Databases
+: Multiple teams and services depend on shared databases, leading to bottlenecks and coordination issues.
+Architectural Limitations
+: The current design constraints make it difficult to implement changes swiftly.(Independent Rollouts and scaling, Multiple domains bundled up and others)
+Complex Data Relationships
+: Data definitions and relationships are complex, making even small changes time-consuming and error-prone.
+Inflexibility in Managing Core Functions
+:
+Key Problems
+:
+Role and Relationship Changes
+: Changes to roles (e.g., driver-owner, driver-vehicle relationships) are not seamlessly managed, requiring workaround solutions like de-boarding entities.
+Increasing Code Complexity
+:
+Challenges
+:
+High Cognitive Load
+: The complexity of the codebase has grown, increasing the difficulty for developers to work efficiently.
+Technical Debt
+: Accumulated tech debt makes it harder to maintain and improve the system.
+High Bug Susceptibility
+:
+Problem
+: The system's complexity and technical debt have made it more prone to bugs, impacting reliability and user experience.
+Opportunities
+Opportunities
+Cardinal Priority
+Feature/Capability
+Description
+Select
+Why do we want to prioritise it?
+Metrics
+Requested by
+Priority
+Primary Theme
+1
+Ability for the owner to change driver on a vehicle without termination (Decouple Vehicle and Driver as entity)
+- This will enable us to build features to enable owners to change driver on vehicle on it’s own
+Re-Architecture Needed
+- Teams receive a significant number of request every month to change driver on a vehicle
+- ~11% of monthly onboarding in Trucks , 13% in ROI, ~13% on 2W and 200%-300% in trucks (EV) are due to driver change requests on vehicle
+- Teams either terminate the partner  or change the phone number against the existing partner. termination and  re-onboarding leads to new driver profile creation which then leads to order, suspension and allocation preference history getting lost, which leads to sub par experience for driver partner and customers, and Porter having multiple profiles for the driver. change phone number leas to diver profile issue where the person working on ground and the person whose documents we have are 2 different individuals
+Cost per onboarded partner
+Experience
+Fraud
+Scalability
+Supply loss
+Support queries
+common
+P0
+Fleet Management
+2
+Restrict onboarding of multiple users with same documents (to start with blocking for terminated partners) [Blacklisting]
+- Restrict leads with the  PAN Number , Aadhar number of the existing owner to get onboarded again
+Re-Architecture Needed
+- Currently system allow multiple owners with the same document ids, This leads to multiple frauds in the system
+- Recently a fraud accrued  where more than 200 fraud partner profiles were created leading to more than a crore loss due to refund frauds. these situations can be avoided with the checks
+- There should be 3 states suspension , Termination and blacklisting
+Fraud
+common
+P0
+Fraud
+3
+Handling Sad flow cases for document verification via Idfy
+Handle reject document due to ID_Not found by IDfy response. It could be due to incorrect OCR or genuine cases. PAN rejection reasons- Id_not found/Name MismatchAadhar rejection reason- Id_not_found/ Age mismatch/State mismatchRC rejection reason- Id_not_found
+Re-Architecture Not Needed
+ID not found cases numbers:
+- DL - 6.5%
+- RC- 1%
+- PAN-  1.2%
+- Aadhar- 0.3%
+- Name mismatch for PAN: 10%
+Need more data point. Currently WIP
+Agent efficiency
+Fraud
+Onboarding TAT
+Trucks
+P0
+Fraud
+4
+Integration with Salesforce task assignment and management module
+- Enable rule based (city, vehicle type, source) auto-assignment of task to agent- Enable scheduling followup on calls
+Re-Architecture Not Needed
+- Currently our TAT for document verification task assignment to agent is  ~12-16 hours, with this change we shall be able to bring it down to few minutes
+- Better task assignment time shall also help us improve the conversion
+- With this we can also build below features
+- Followup call scheduling
+- Detailed journey tracking of the tasks
+- Call integration [Initiate call from the salesforce interface itself]
+- Automation rules on the task to auto approve documents or take certain actions
+Onboarding Conversion
+Onboarding TAT
+common
+P0
+Partner onboarding TAT
+5
+Salesforce document Sync issues - Make the Partner documents instantly available in salesforce
+- Make the partner documents instantly available on salesforce for verification after submission. Currently it take more than 15 minutes due to our current event based tech implimentation
+Re-Architecture Needed
+- Currently all the documents are available on salesforce after ~15 minutes, which leads for agent, lead and FOS agents waiting on ground during that time and being stuck
+- This will become even more critical when we start assigning the tickets to agent instantly
+Onboarding TAT
+common
+P1
+Partner onboarding TAT
+6
+Enabling launch of Partner Onboarding in new country or Vehicle category with in few hours
+- Enable app based onboarding in Bagladesh
+- Enable app based onboarding for slow moving EV (Vehicle without RC)
+Re-Architecture Needed
+- Current system do not have the flexibility to configure the app onboarding flow basis the vehicle category and country/city. This leads to category team onboarding partners via offline channels in International markets and for slow moving vehicles, which leads to higher reliance on non-organic channels and higher TAT and cost
+- Enabling this shall help us go live in new category and city with in few hours and boost our organic onboardings
+Cost per onboarded partner
+Scalability
+2W
+International
+P0
+International Expansion
+7
+Configurability of DIV
+DIV configurability at City/Category/Document level
+Re-Architecture Not Needed
+- Business teams need capability to configure the DIV on City/Category and Document level
+- Need to disable DIV for E-loader, Slow moving cases
+Supply loss
+Support queries
+common
+P0
+Cost per onboarded partner
+8
+Allow users to upload documents from phone gallary
+- Allow document upload from gallary
+Re-Architecture Not Needed
+- There is around 40% drop off on the owner details page. ~7% of these users dropped off as they couldn’t find an option to upload the documents from gallary
+Onboarding Conversion
+P0
+Onboarding Conversion
+9
+Enable supervisor persona and it’s mapping to owners and vehicles
+- Enable supervisors to be onboarded and get mapped to owners and vehicles
+- Supervisors shall be able to manage fleet
+Re-Architecture Needed
+- In the absence of this features we end up creating duplicate owner profiles in the system, which force us to keep loopholes in the system like allowing multiple users with same documents which then leads to fraud and compliance challenges
+- Without building this it would be difficult to ensure that duplicate profiles are not getting created for Vendors
+- Zypp (Bike share) has 6 owner account created in Delhi as supervisor persona is not supported currently. overall have ~15 account
+- Owners also have hustle when one supervisor leaves and they need to remap the vehicle to another supervisor
+Fraud
+Scalability
+Owner Persona
+P1
+Fleet Management
+10
+Enable users to update documents before submission (back button experience)
+- Enable users to change documents if they or someone else has updated the documents incorrectly by mistake and dropped on in the journey
+Re-Architecture Not Needed
+- 200+ L3 support tickets are received in a month (all categories)
+Onboarding Conversion
+Support queries
+common
+P1
+Onboarding Conversion
+11
+Ability for partners to change phone number via app
+Allow partners to change phone number from the app itself
+Re-Architecture Not Needed
+We receive
+- XX City Walkins for Driver phone number change
+- YY Support queries to change phone number
+Support queries
+P1
+Support queries
+12
+Automated onboarding
+Allow partners to get onboarded without involvement of agents
+Not Applicable
+Currently partners spend around 5-10 mins per onboarding. If we are able to automate at least the happy flows, it would help save manual bandwidth
+Cost per onboarded partner
+13
+Build video based assisted onboarding flow
+- Show the video based assistance to partner in their local language to explain what shall they do on each screen
+Not Applicable
+- Few partners are poor in reading and understanding and hence a video based assisted onboarding shall help them complete the onboarding without the help of 3rd person. Right now around 40% get onboarded without any intervention
+Experience
+Onboarding Conversion
+Support queries
+P1
+Onboarding Conversion
+13
+Improve document upload experience
+- Set clear distinction between the backside and front side of the document for the user
+- Improve the document image capture and upload experience
+- Give option to upload document from galary
+Re-Architecture Needed
+- ~60% of the cases the documents get rejected due to poor quality(Photo copy -15%, Blur image - 21%, Cropped image - 8%)
+- In 12% of the cases user uploaded the same side of the document twice and missed the one side
+- ~6% of the users drop off on the owner details page as they couldn’t find an option to upload the document
+Onboarding Conversion
+P1
+Onboarding Conversion
+14
+Do not collect the back side of the PAN card as a document
+Do not collect back side of the PAN card
+Re-Architecture Not Needed
+- Back side of the PAN card is not required but in all cases we ask partners to upload the backside of the PAN card as well
+Onboarding Conversion
+P1
+Onboarding Conversion
+15
+Setup  campaigns for people who drop-off in the journey to remind them to complete the onboarding process
+Enable communication with leads inform of banner, notification, APXOR,
+Not Applicable
+- ~40% of the user drop-off on the owner details page. out of this ~20% drop off as they do not have the time to upload the document at that instance.
+- No method of communicating with supply leads exists today
+Onboarding Conversion
+common
+P1
+Onboarding Conversion
+Enable Onboarding via the owner app
+- Enable fleet owners to signup via owner app as well and allow them to add vehicles
+Re-Architecture Needed
+Experience
+Onboarding Conversion
+Scalability
+P1
+Setup (time to live) TTL for Partner onboarding application
+Mobile already registered issue
+Re-Architecture Not Needed
+- Supply Lead unable to proceed
+- XX support queries received to terminate the lead on a monthly basis
+Support queries
+Trucks
+P1
+Lead attribution improvement
+Not Applicable
+- Observability
+P1
+- Make Waitlisting and registration fee configurable basis the onboarding source (e.g. 3PL, OEM Leads)
+-Enable WL and Regfee configurable at Channel (important)/City/Category Level.Also enable regfee and WL configurability at different stages of the onboarding journey- Lead attribution in Salesforce
+Re-Architecture Needed
+Lead attribution system. Using user experience in case of waitlisting
+Cost per onboarded partner
+Experience
+Trucks
+P1
+Owner Profile page (Pure Owner persona)
+Enable owner information via profile page
+Re-Architecture Needed
+Missing profile section (Name, Phone number, Logout option)
+Experience
+common
+P1
+Training Video journey improvement
+Need to ravamp the training experience of partners. Training videos are not configurable at city/category level and content needs imrovement as well.
+Not Applicable
+Partner Experience gets affected. Leads to funnel drop as well
+Experience
+Onboarding Conversion
+Support queries
+common
+P2
+Allow users to upload vehicle tax document if RC is not available
+Allow vehicle tax certificate as optional document instead of RC
+Re-Architecture Needed
+Onboarding Conversion
+P2
+Pause Onboardings for Specific Owners
+Pause onboarding for specific Owner Number/Company GST/Company PAN identifier
+Re-Architecture Not Needed
+- Owner app usecase
+Fraud
+common
+P3
+BGV verification for fleet drivers
+Extend BGV to fleet drivers/ Collect BGV document of the drivers
+Re-Architecture Not Needed
+- Owner app usecase
+Fraud
+common
+P3
+Owner app My Vehicle page (UX improvement )
+Simplify the owners my vehicles page for different use case- Pending onboarding drivers-Already onboarded
+Re-Architecture Not Needed
+Experience
+common
+P3
+Owner number change
+Enabling changing number by owner on the app
+Re-Architecture Needed
+xx L3 tickets
+Experience
+Support queries
+common
+P3
+Make BGV (CRC/ DAV) configurable basis city and vehicle category
+Re-Architecture Not Needed
+Cost per onboarded partner
+common
+P2
+Ability to collect document from app from the institutional owners
+Appendix
+Relevant documents -
+Wish list by the trucks team -
+Onboarding Wishlist
+Onboarding metrics trucks -
+🧲
+Partner Acquisition & Onboarding
+Requirement sheet shared by the trucks team -
+https://docs.google.com/spreadsheets/d/132vkOdoF-sCVLVIQevMGqcqr7um6bmAnm-yrp34mcOs/edit?gid=1578004764#gid=1578004764
+Owner details page drop off reasons (Partner App)
+👨🏻‍💼
+3PL- Owner Persona
+SM data discrepancies
+Partner Onboarding System vision doc
+Consolidated overview of document types in onboarding
+List of data point and issues -
+https://docs.google.com/spreadsheets/d/15hXs7GoHBPgCtZPmiiQbIpo8q4P60HyfRPp0BKGNoDM/edit?gid=0#gid=0
+Table old
+Opportunities (1)
+Name
+Tags
+Estimated impact
+Requested by
+Metrics
+Cardinal Priority
+User is not able to change the owner documents after submission (Back button doesn’t work in Onboarding flow in partner app)
+Partner app Onboarding journey
+XX Weekly L3 support queries for the termination of leads
+Trucks
+Cost per onboarded partner
+Supply loss
+Support queries
+1
+Blacklisting - Unique document check in onboarding (to start with blocking for terminated partners)
+Compliance
+Partner app Onboarding journey
+We recently had a loss of Rs XX as a partner created YY duplicate driver profiles and then took refund
+Trucks
+Fraud
+2
+Ability for the owner to change driver
+Owner app
+Driver Change request (July month)
+- 3PL Vendors : 1017
+- Spot : 462
+Trucks
+Cost per onboarded partner
+Supply loss
+Support queries
+3
+Ability for partners to change phone number via app
+Support queries
+4
+Auto-assignment of leads to agent on salesforce
+Salesforce
+Onboarding TAT
+5
+Enable onboarding via app for international markets with different document
+International
+Cost per onboarded partner
+Scalability
+6
+Do not collect the back side of the PAN card as a document
+Onboarding Conversion
+7
+Enable onboarding of slow moving vehicles without RC via app
+2W
+Cost per onboarded partner
+Scalability
+8
+Onboarding in the owner app
+Owner app
+9
+Make the Partner documents instantly available in salesforce (Sync issues0
+Salesforce
+10
+Ability to get onboarded & add vehicle through the owner app
+Owner app
+11
+Handling Sad flow cases
+ID not found cases numbers:RC- 1%PAN-  TBDAadhar- TBDName mismatch for PAN: 10%
+Trucks
+Fraud
+Onboarding TAT
+0
+Training Video journey improvement
+Partner Experience gets affected. Leads to funnel drop as well
+Onboarding Conversion
+Support queries
+2
+-Whitelisting WL partners in Upfront Reg fee (as per the source of onboarding e.g. 3PL, OEM Leads)
+Lead attribution system. Using user experience in case of waitlisting
+Trucks
+Cost per onboarded partner
+1
+Information/Communication with Supply Leads
+No method of communicating with supply leads exists today
+Supply loss
+1
+Upload image/file of documents
+Leads to supply loss as partners generally carires soft copies of document
+Supply loss
+1
+Configurability of DIV
+Supply loss
+Support queries
+0
+Pause Onboardings for Specific Owners
+- Owner app usecase
+Fraud
+3
+BGV verification for fleet drivers
+- Owner app usecase
+Fraud
+3
+Owner app My Vehicle page (UX improvement )
+3
+Owner Profile page (Pure Owner persona)
+Missing profile section (Name, Phone number, Logout option)
+1
+Owner number change
+xx L3 tickets
+Support queries
+3
+Numbers (July)
+Category
+Total onboarding
+3PL onboarding
+Change requests (overall)
+Change request 3PL
+% change request
+LCV
+3372
+343
+1524
+1249
+HCV
+2306
+0
+187
+0
+2W
+512
+350
+ROI - Trucks
+ROI - 2W
+Fleet management issues
+Change driver
+Supervisor
+Add driver
+Add vehicle
+Issues due to decouple
+Change driver (Termination/driver phone number change is needed)
+Refund process for registration fee
+Walk-ins
+Key issue
+Lack of support for the large Fleet management use cases :
+Almost 80% of the EV supply and 40-50% of E-Loader supply across categories is through 3PL, which will likely continue.Current 3PL (3rd Party vendors) contribute to 10% of LCV supply and the target is to reach 25% by the end of this year. Our current systems are majorly built for the Driver cum owner persona. It is difficult to manage a large fleet on our platform as in case of 3PL drivers on a vehicle change very frequently but our current system doesn’t support it smoothly (we have hacky workarounds) for changing drivers (frequently) on a vehicle, allowing middle layer to manager set of vehicles effectively, penalties are applied on vehicle rather than driver and so on , this leads to poor experience for large fleet owners and earning loss. Leads to poor retentions and unintentional frauds on the platform. Currently, large fleet owners contribute to ~10% of our supply and we expect this to grow by 3X by 2025(
+relevant doc for reference
+), without solving for them will hinder us for doing business with them efficiently. They shares may also increase with EV mandates coming into picture. Currently
+Below are key problems :
+High TAT and hacky ways to change driver on a vehicle -
+In EV categories if we are onboarding 100 vehicle in month, we receive almost 200-300 requests (2X to 3X of onboarding) to change driver on a vehicle. For them, previously team use to terminate and then re-onboard the same vehicle with new driver now they are changing just the phone number of the driver to enable other driver to start working. usual TAT for this change is approx. 1-2 days. this leads to multiple challenges for 3PL owners as well as Porter
+Earning loss to vendor for the duration for which vehicle is not working.
+1249 request in LCV received in the month of July. let’s assume average TAT is 1 days and Let’s assume average earning is 1000 then it leads to 12.49 lakhs loss to vendor
+Difficulty to track driver in case of fraud -
+Since we just have the phone number of the driver and do not have the other documents, it would be difficult to track partners in case of fraud
+Data sanity issues -
+As porter the the person who is driving the vehicle and the persons whose documents we posses are 2 different persons
+SLA Penalties get applied to driver instead of vehicle -
+All the suspensions gets carried forward to the new driver, Ex : If the old driver was suspended for 3 days then no other driver can work on the same vehicle until the 3 days are over
+Turnaround time to launch a new country :
+Currently who do not have Onboarding flow built in on the partner app for the international markets, which leads to we relying mostly on FOS as a channel for partner acquisition and high man-power requirement at the city office for onboarding. Leading to high cost of acquisition. Along with that it would be difficult to scale Partner onboarding capacity only on the basis of 1 channel (FOS).App based onboarding shall help us add more channel of acquisition like Marketing, Organic etc. Solving this challenges is important from the growth standpoint
+Below are the no. of Monthly onboarding
+Loopholes in the system leading to fraud -
+We currently allows multiple users with same documents which leads to potential frauds.
+Recently a fraud accrued  where more than 200 fraud partner profiles were created leading to more than a crore loss due to refund frauds. these situations can be avoided with the checks
+Drop off in the onboarding Journey -
+Document management -
+Audited the Rejected documents(Aadhar, PAN, RC,DL) by the SCMS team. In 63% of the cases quality of the image was the issue (Photo copy -15%, Blur image - 21%, Cropped image - 8%), In 17% of the cases users uploaded other persons documents. In 10% of the cases user uploaded the same side of the document twice and missed the one side.These insights shall help us built better document upload experience while revisiting
+Sheet for more insights
+.
+Owner details page -
+Conducted user research to identify why users drop off on the owner details page. Approximately 30% of users who drop off are not potential partners (20% are customers, 9% are existing partners). Another 35% drop off due to unavailable documents, while 19% leave the process because they are busy at that moment.
+Research doc link
+.
+Vehicle page -
+Analysed the drop off on the vehicle details page which has ~20% drop-off in the journey. 26% of these users drop-off due to RC related issues.
+here is the document
+with more details these insights shall help us built better add vehicle journey while revisiting
+TAT for Partner onboarding is high -
+Currently this metrics is not being measured cleanly due to technical challenges and we are finding workaround
+Currently ~30-40% of our partner supply comes through the organic channel (Without the help of the city office), All of these leads get assigned to SCMS agent next days for Document verification. TAT for partner assignment is ~12-16 hours
+Our P75 TAT for partner onboarding is in 3W is 2 days,7Ft is 9 days,8ft is 6 days
+6. Tech challenges -
+High Lead time to change  -
+highly coupled systems
+Shared Databases
+current limitation of the architecture
+Data definitions and Relations
+Current system doesn’t allow easy change
+of phone for a owner driver -
+Role change
+driver-vehicle, driver -owner and owner vehicle relationship changes are not managed in our current system- hack is to de-board the entities
+Complexity of the code has grown
+cognitive load high
+Tech debt management
+Bug prone  -
+Prioritisation framework
+Below is the order in which we will be solving the problems in onboarding
+Fleet management use cases
+Improving onboarding funnel conversion
+TAT for partner onboarding
+We will be solving the potential fraud while working on a piece of a particular journey and will also ensure that it is being built keeping internal use cases in mind
+Inline comments
+Block text
+:
+metrics
+Prashant Gadpale
+Jul 31, 2024, 3:27 PM
+@Arvind Kurmi
+@Vikram Rao
+- please help here
+Block text
+:
+metrics
+Prashant Gadpale
+Aug 27, 2024, 10:20 AM
+@Sandesh S
+- Can you help with this
+Block text
+:
+API response times to be under (??)
+Arvind Kurmi
+Sep 2, 2024, 2:05 PM
+Can we have some benchmark for Internal API’s and external (Vendor) API’s? This will set the expectations right. Feel free to take the past data into account
+S
+Sandesh S
+Sep 3, 2024, 11:25 PM
+Yes , we will do that.
+Block text
+:
+Utilization
+Arvind Kurmi
+Sep 2, 2024, 2:05 PM
+Alerts setup from the first day.
+S
+Sandesh S
+Sep 3, 2024, 11:26 PM
+Its considered as part of Monitoring
+Resolved inline comments
+Block text
+:
+Tech challenges:
+Prashant Gadpale
+Aug 8, 2024, 9:42 PM
+@Arvind Kurmi
+@Vikram Rao
+- I have rewritten it, Please review
+Block text
+:
+Opportunities
+Vikram Rao
+Jul 26, 2024, 1:00 PM
+Unable to arrive at the need for a Complete Rewrite of onboarding based on the list of issues below

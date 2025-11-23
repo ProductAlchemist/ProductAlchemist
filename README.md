@@ -35,9 +35,6 @@ Designed tax compliance system handling complex regulatory requirements → Deli
 **[Partner Acquisition & Growth](https://github.com/ProductAlchemist/porter-case-studies/blob/main/partner-acquisition.md)**
 Launched multi-channel acquisition strategy → 20% digital supply, 5% via OEM partnerships → Improved conversion 40%→52%
 
-**[Discovery & Opportunity Sizing](https://github.com/ProductAlchemist/porter-case-studies/blob/main/acquisition-opportunity-sizing.md)**
-Strategic discovery work that informed product priorities → Identified ₹8.5 Cr TAM opportunity through data-driven analysis
-
 [→ View all detailed case studies with full metrics and learnings](https://github.com/ProductAlchemist/porter-case-studies)
 
 ---
