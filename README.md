@@ -1,3 +1,9 @@
+# Kshitij Kulkarni - Product Manager
+
+Product Manager specializing in 0→1 platforms | Fintech • E-commerce • Gaming • AI PM
+
+---
+
 # Hi, I'm Kshitij Kulkarni 👋
 
 ### I build fintech platforms and behavioral design systems that scale from 0→1
