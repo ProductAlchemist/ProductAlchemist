@@ -1,14 +1,12 @@
-# Kshitij Kulkarni - Product Manager
+# Kshitij Kulkarni
 
-Product Manager specializing in 0→1 platforms | Fintech • E-commerce • Gaming • AI PM
+**Product Manager | Building 0→1 Platforms & AI Products**
 
----
+Product Manager at Porter with 3.5 years of experience building fintech platforms and behavioral design systems. Scaled lending 10x, built taxation infrastructure saving ₹2.4 Cr annually, and created growth tools that work.
 
-# Hi, I'm Kshitij Kulkarni 👋
+**After hours:** Building AI apps, riding to the world's highest motorable passes (Umling La, Khardung La, Chang La ✓), binging anime, gaming, reading, and hunting for the perfect tapri chai.
 
-### I build fintech platforms and behavioral design systems that scale from 0→1
-
-Product Manager @ **Porter** specializing in creating platforms that drive business impact through smart product strategy, data-driven decisions, and seamless user experiences.
+📍 Bengaluru | 🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/) | 📧 kshitijkulkarni95@gmail.com
 
 ---
 
