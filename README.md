@@ -16,6 +16,12 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 ---
 
+## 🎮 AI Projects
+
+**[AI Tic-Tac-Toe](https://productalchemist.github.io/tic-tac-toe/)** → Unbeatable AI opponent built with Claude Sonnet 4 using minimax algorithm. [Play here](https://productalchemist.github.io/tic-tac-toe/)
+
+---
+
 ## 📫 Connect With Me
 
 💼 **LinkedIn**: [kshitijkulkarni-productmanager](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
@@ -26,9 +32,9 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 ---
 
-## 📚 What I've Built at Porter
+## 📚 Product Case Studies
 
-Detailed case studies of platform products I've shipped:
+Want to see how these platforms were actually built? Detailed case studies with metrics, learnings, and honest reflections on what worked (and what didn't).
 
 **[Lending Platform (0→1)](https://github.com/ProductAlchemist/porter-case-studies/blob/main/lending-platform.md)**
 Built and scaled complete lending infrastructure from scratch → 10x growth in platform adoption → Enabled credit access for thousands of logistics partners
@@ -42,35 +48,7 @@ Launched multi-channel acquisition strategy → 20% digital supply, 5% via OEM p
 **[Discovery & Opportunity Sizing](https://github.com/ProductAlchemist/porter-case-studies/blob/main/acquisition-opportunity-sizing.md)**
 Strategic discovery identifying ₹8.5 Cr TAM → Created prioritization framework across 20+ opportunities → 5 features shipped from broader vision
 
-[→ View all detailed case studies with full metrics and learnings](https://github.com/ProductAlchemist/porter-case-studies)
-
----
-
-## 🚀 What I Do
-
-**💰 Fintech Platforms**
-Building lending, payments, and compliance infrastructure that balances risk management with user growth
-
-**🧠 Behavioral Design**
-Creating systems that nudge users toward desired outcomes while preventing fraud and abuse
-
-**📊 0→1 Product Development**
-Taking ideas from concept to scaled platforms with measurable business impact
-
-**⚙️ Platform Architecture**
-Designing scalable infrastructure that enables business growth and operational efficiency
-
----
-
-## 🎯 My Approach
-
-✅ **Data-Driven**: Every decision backed by metrics and user behavior analysis
-
-✅ **Impact-Focused**: Obsessed with measurable business outcomes and ROI
-
-✅ **Technical**: Deep understanding of platform architecture and scalability
-
-✅ **Cross-Functional**: Leading engineering, design, and business teams to ship fast
+→ **[View detailed case studies](https://github.com/ProductAlchemist/porter-case-studies)** with full problem/solution breakdowns, business impact, and key takeaways
 
 ---
 
@@ -103,5 +81,3 @@ Interested in discussing: 0→1 product ideas, behavioral design patterns, finte
 ---
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ProductAlchemist&color=58A6FF&style=flat-square&label=Profile+Views)
-
-*Building in public, learning in the open.*
