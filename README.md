@@ -6,8 +6,6 @@ Product Manager at Porter with 3.5 years of experience building fintech platform
 
 **After hours:** Building AI apps, riding to the world's highest motorable passes (Umling La, Khardung La, Chang La ✓), binging anime, gaming, reading, and hunting for the perfect tapri chai.
 
-📍 Bengaluru | 🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/) | 📧 kshitijkulkarni95@gmail.com
-
 ---
 
 ## 🌱 Currently Learning
@@ -18,17 +16,15 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 ## 🎮 AI Projects
 
-**[AI Tic-Tac-Toe](https://productalchemist.github.io/tic-tac-toe/)** → Unbeatable AI opponent built with Claude Sonnet 4 using minimax algorithm. [Play here](https://productalchemist.github.io/tic-tac-toe/)
+**[AI Tic-Tac-Toe](https://playloop-studios.vercel.app/)** → Unbeatable AI opponent built with Claude Sonnet 4 using minimax algorithm. [Play here](https://playloop-studios.vercel.app/)
 
 ---
 
-## 📫 Connect With Me
+## 📫 Connect
 
-💼 **LinkedIn**: [kshitijkulkarni-productmanager](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
-
-📧 **Email**: kshitijkulkarni95@gmail.com
-
-📂 **Case Studies**: [porter-case-studies](https://github.com/ProductAlchemist/porter-case-studies)
+🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
+📧 [kshitijkulkarni95@gmail.com](mailto:kshitijkulkarni95@gmail.com)
+📍 Bengaluru, India
 
 ---
 
@@ -70,13 +66,11 @@ Strategic discovery identifying ₹8.5 Cr TAM → Created prioritization framewo
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProductAlchemist&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ProductAlchemist&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
-
 ---
 
 ## 🤝 Let's Collaborate
 
-Interested in discussing: 0→1 product ideas, behavioral design patterns, fintech platform architecture, AI/LLM applications in product
+Open to discussing: 0→1 product strategy | Behavioral design | Fintech platforms | AI/LLM applications
 
 ---
 
