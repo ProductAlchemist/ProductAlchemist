@@ -7,8 +7,11 @@ Product Manager at Porter with 3.5 years of experience building fintech platform
 **After hours:** Building AI apps, riding to the world's highest motorable passes (Umling La, Khardung La, Chang La ✓), binging anime, gaming, reading, and hunting for the perfect tapri chai.
 
 📫 **Connect:**
+
 🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
+
 📧 [kshitijkulkarni95@gmail.com](mailto:kshitijkulkarni95@gmail.com)
+
 📍 Bengaluru, India
 
 ---
