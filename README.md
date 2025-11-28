@@ -6,6 +6,11 @@ Product Manager at Porter with 3.5 years of experience building fintech platform
 
 **After hours:** Building AI apps, riding to the world's highest motorable passes (Umling La, Khardung La, Chang La ✓), binging anime, gaming, reading, and hunting for the perfect tapri chai.
 
+📫 **Connect:**
+🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
+📧 [kshitijkulkarni95@gmail.com](mailto:kshitijkulkarni95@gmail.com)
+📍 Bengaluru, India
+
 ---
 
 ## 🌱 Currently Learning
@@ -17,14 +22,6 @@ Building expertise in AI/LLM product development through hands-on implementation
 ## 🎮 AI Projects
 
 **[AI Tic-Tac-Toe](https://playloop-studios.vercel.app/)** → Unbeatable AI opponent built with Claude Sonnet 4 using minimax algorithm. [Play here](https://playloop-studios.vercel.app/)
-
----
-
-## 📫 Connect
-
-🔗 [LinkedIn](https://www.linkedin.com/in/kshitijkulkarni-productmanager/)
-📧 [kshitijkulkarni95@gmail.com](mailto:kshitijkulkarni95@gmail.com)
-📍 Bengaluru, India
 
 ---
 
@@ -59,12 +56,6 @@ Strategic discovery identifying ₹8.5 Cr TAM → Created prioritization framewo
 **Core Team, TEDxIMT Ghaziabad (2022)** – Led 40-person team
 
 **SPOT Award, Cognizant (2018)** – Star Performer
-
----
-
-## 📊 GitHub Activity
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProductAlchemist&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF)
 
 ---
 
