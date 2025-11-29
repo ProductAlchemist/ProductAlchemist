@@ -24,7 +24,10 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 ## 🎮 AI Projects
 
-**[AI Tic-Tac-Toe](https://playloop-studios.vercel.app/)** → Unbeatable AI opponent built with Claude Sonnet 4 using minimax algorithm. [Play here](https://playloop-studios.vercel.app/)
+**[PlayLoop Studios](https://playloop-studios.vercel.app/)** → Gaming platform with AI-powered games
+
+- **[Tic-Tac-Toe](https://playloop-studios.vercel.app/games/tic-tac-toe/)** - Unbeatable AI, multiple modes
+- **[Snake](https://playloop-studios.vercel.app/games/snake/)** - Classic arcade, 3 difficulty levels
 
 ---
 
