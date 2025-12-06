@@ -24,10 +24,11 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 ## 🎮 AI Projects
 
-**[PlayLoop Studios](https://playloop-studios.vercel.app/)** → Gaming platform with AI-powered games
+**[PlayLoop Studios](https://playloop-studios.vercel.app/)** → AI-powered Gaming platform
 
-- **[Tic-Tac-Toe](https://playloop-studios.vercel.app/games/tic-tac-toe/)** - Unbeatable AI, multiple modes
-- **[Snake](https://playloop-studios.vercel.app/games/snake/)** - Classic arcade, 3 difficulty levels
+- **[Tic-Tac-Toe](https://playloop-studios.vercel.app/games/tic-tac-toe/)** - Think you can beat perfect AI? You can't. Try anyway.
+- **[Snake](https://playloop-studios.vercel.app/games/snake/)** - Classic Snake with AI that adapts to your moves.
+- **[2048](https://playloop-studios.vercel.app/games/2048/dist/)** - Slide and combine tiles to reach 2048. 
 
 ---
 
