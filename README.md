@@ -2,7 +2,7 @@
 
 **Product Manager | Building 0→1 Platforms & AI Products**
 
-Product Manager at Porter with 3.5 years of experience building fintech platforms and behavioral design systems. Scaled lending 10x, built taxation infrastructure saving ₹2.4 Cr annually, and created growth tools that work.
+Product Manager at Porter with 4 years of experience building fintech platforms and behavioral design systems. Scaled lending 10x, built taxation infrastructure saving ₹2.4 Cr annually, and created growth tools that work.
 
 **After hours:** Building AI apps, riding to the world's highest motorable passes (Umling La, Khardung La, Chang La ✓), binging anime, gaming, reading, and hunting for the perfect tapri chai.
 
@@ -28,6 +28,7 @@ Building expertise in AI/LLM product development through hands-on implementation
 
 - **[Tic-Tac-Toe](https://playloop-studios.vercel.app/games/tic-tac-toe/)** - Unbeatable AI, multiple modes
 - **[Snake](https://playloop-studios.vercel.app/games/snake/)** - Classic arcade, 3 difficulty levels
+- **[Cipher](https://cipher-daily.vercel.app/)** - Daily word puzzle, 2,000+ players
 
 ---
 
